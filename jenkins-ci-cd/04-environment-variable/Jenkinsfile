@@ -1,0 +1,41 @@
+pipeline{
+
+   agent any
+   environment {
+     NUMBER=3
+   }
+
+   stages{
+   stage("test 01"){
+   steps{
+   echo "executing mvn command"
+    echo "Number= ${NUMBER}"
+   }
+
+
+   }
+
+   stage("test 02"){
+    environment{
+        NUMBER=6
+      }
+   steps{
+   echo "docker installtion"
+   echo "Number= ${NUMBER}"
+   }
+
+   }
+
+
+
+   }
+   post{
+    always{
+    echo "closing a file"
+    }
+
+   }
+
+
+
+}

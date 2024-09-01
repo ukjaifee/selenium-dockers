@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="7" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-29T14:49:54 GMT" name="vendor-portal" finished-at="2024-08-29T14:52:06 GMT" duration-ms="131878">
+    <groups>
+    </groups>
+    <test started-at="2024-08-29T14:49:54 GMT" name="user-sam" finished-at="2024-08-29T14:51:21 GMT" duration-ms="87053">
+      <class name="com.umesh.tests.vendorportal.VendorPortalTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@12299890]" started-at="2024-08-29T14:49:54 GMT" name="setDriver" finished-at="2024-08-29T14:50:35 GMT" duration-ms="41083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@12299890]" started-at="2024-08-29T14:50:35 GMT" name="setPageObjects" finished-at="2024-08-29T14:50:37 GMT" depends-on-methods="com.umesh.tests.AbstractTest.setDriver" duration-ms="2416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test-data/vendor-portal/sam.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPageObjects -->
+        <test-method signature="loginTest()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@12299890]" started-at="2024-08-29T14:50:37 GMT" name="loginTest" finished-at="2024-08-29T14:50:52 GMT" duration-ms="14323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@12299890]" started-at="2024-08-29T14:50:52 GMT" name="sleep" finished-at="2024-08-29T14:50:55 GMT" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="dashboardTest()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@12299890]" started-at="2024-08-29T14:50:55 GMT" name="dashboardTest" finished-at="2024-08-29T14:51:02 GMT" depends-on-methods="com.umesh.tests.vendorportal.VendorPortalTest.loginTest" duration-ms="7625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboardTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@12299890]" started-at="2024-08-29T14:51:02 GMT" name="sleep" finished-at="2024-08-29T14:51:05 GMT" duration-ms="3003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="logoutTest()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@12299890]" started-at="2024-08-29T14:51:05 GMT" name="logoutTest" finished-at="2024-08-29T14:51:13 GMT" depends-on-methods="com.umesh.tests.vendorportal.VendorPortalTest.dashboardTest" duration-ms="7271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@12299890]" started-at="2024-08-29T14:51:13 GMT" name="sleep" finished-at="2024-08-29T14:51:16 GMT" duration-ms="3004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@12299890]" started-at="2024-08-29T14:51:16 GMT" name="quitDriver" finished-at="2024-08-29T14:51:21 GMT" duration-ms="5098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.umesh.tests.vendorportal.VendorPortalTest -->
+    </test> <!-- user-sam -->
+    <test started-at="2024-08-29T14:49:54 GMT" name="user-mike" finished-at="2024-08-29T14:51:34 GMT" duration-ms="100568">
+      <class name="com.umesh.tests.vendorportal.VendorPortalTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@135606db]" started-at="2024-08-29T14:49:54 GMT" name="setDriver" finished-at="2024-08-29T14:50:36 GMT" duration-ms="42234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@135606db]" started-at="2024-08-29T14:50:36 GMT" name="setPageObjects" finished-at="2024-08-29T14:50:37 GMT" depends-on-methods="com.umesh.tests.AbstractTest.setDriver" duration-ms="1251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test-data/vendor-portal/mike.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPageObjects -->
+        <test-method signature="loginTest()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@135606db]" started-at="2024-08-29T14:50:37 GMT" name="loginTest" finished-at="2024-08-29T14:50:51 GMT" duration-ms="13232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@135606db]" started-at="2024-08-29T14:50:51 GMT" name="sleep" finished-at="2024-08-29T14:50:54 GMT" duration-ms="3010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="dashboardTest()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@135606db]" started-at="2024-08-29T14:50:54 GMT" name="dashboardTest" finished-at="2024-08-29T14:51:24 GMT" depends-on-methods="com.umesh.tests.vendorportal.VendorPortalTest.loginTest" duration-ms="30639" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: monthly-earning' (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: monthly-earning' (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at vendorportal.DashboardPage.isAt(DashboardPage.java:49)
+at com.umesh.tests.vendorportal.VendorPortalTest.dashboardTest(VendorPortalTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: #monthly\-earning
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.0', revision: '15400459dd*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.6.41-0-virt', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2a777f5e-d774-4b14-8e47-565fdc584b87, findElement {using=id, value=monthly-earning}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 131.0a1, moz:accessibilityChecks: false, moz:buildID: 20240810213600, moz:debuggerAddress: true, moz:firefoxOptions: {}, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 6.6.41-0-virt, moz:processID: 175, moz:profile: /tmp/rust_mozprofileiYayxo, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.24.0.3:4444/sessio..., se:containerName: , se:noVncPort: 7900, se:vnc: ws://172.24.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.24.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Session ID: 2a777f5e-d774-4b14-8e47-565fdc584b87
+at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+... 24 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboardTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@135606db]" started-at="2024-08-29T14:51:24 GMT" name="sleep" finished-at="2024-08-29T14:51:27 GMT" duration-ms="3004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="logoutTest()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@135606db]" started-at="2024-08-29T14:51:27 GMT" name="logoutTest" finished-at="2024-08-29T14:51:27 GMT" depends-on-methods="com.umesh.tests.vendorportal.VendorPortalTest.dashboardTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.umesh.tests.vendorportal.VendorPortalTest.logoutTest() on instance com.umesh.tests.vendorportal.VendorPortalTest@135606db depends on not successfully finished methods 
+[com.umesh.tests.vendorportal.VendorPortalTest.dashboardTest() on instance com.umesh.tests.vendorportal.VendorPortalTest@135606db]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.umesh.tests.vendorportal.VendorPortalTest.logoutTest() on instance com.umesh.tests.vendorportal.VendorPortalTest@135606db depends on not successfully finished methods 
+[com.umesh.tests.vendorportal.VendorPortalTest.dashboardTest() on instance com.umesh.tests.vendorportal.VendorPortalTest@135606db]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@135606db]" started-at="2024-08-29T14:51:27 GMT" name="quitDriver" finished-at="2024-08-29T14:51:34 GMT" duration-ms="6927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.umesh.tests.vendorportal.VendorPortalTest -->
+    </test> <!-- user-mike -->
+    <test started-at="2024-08-29T14:51:21 GMT" name="user-john" finished-at="2024-08-29T14:52:06 GMT" duration-ms="44539">
+      <class name="com.umesh.tests.vendorportal.VendorPortalTest">
+        <test-method is-config="true" signature="setConfig()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@68034211]" started-at="2024-08-29T14:49:54 GMT" name="setConfig" finished-at="2024-08-29T14:49:54 GMT" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setConfig -->
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@68034211]" started-at="2024-08-29T14:51:21 GMT" name="setDriver" finished-at="2024-08-29T14:51:38 GMT" duration-ms="17232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@68034211]" started-at="2024-08-29T14:51:38 GMT" name="setPageObjects" finished-at="2024-08-29T14:51:38 GMT" depends-on-methods="com.umesh.tests.AbstractTest.setDriver" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test-data/vendor-portal/john.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPageObjects -->
+        <test-method signature="loginTest()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@68034211]" started-at="2024-08-29T14:51:38 GMT" name="loginTest" finished-at="2024-08-29T14:51:45 GMT" duration-ms="7049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@68034211]" started-at="2024-08-29T14:51:45 GMT" name="sleep" finished-at="2024-08-29T14:51:48 GMT" duration-ms="3009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="dashboardTest()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@68034211]" started-at="2024-08-29T14:51:48 GMT" name="dashboardTest" finished-at="2024-08-29T14:51:53 GMT" depends-on-methods="com.umesh.tests.vendorportal.VendorPortalTest.loginTest" duration-ms="4111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboardTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@68034211]" started-at="2024-08-29T14:51:53 GMT" name="sleep" finished-at="2024-08-29T14:51:56 GMT" duration-ms="3003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="logoutTest()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@68034211]" started-at="2024-08-29T14:51:56 GMT" name="logoutTest" finished-at="2024-08-29T14:52:01 GMT" depends-on-methods="com.umesh.tests.vendorportal.VendorPortalTest.dashboardTest" duration-ms="5364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@68034211]" started-at="2024-08-29T14:52:01 GMT" name="sleep" finished-at="2024-08-29T14:52:04 GMT" duration-ms="3007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.umesh.tests.vendorportal.VendorPortalTest@68034211]" started-at="2024-08-29T14:52:04 GMT" name="quitDriver" finished-at="2024-08-29T14:52:06 GMT" duration-ms="1754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.umesh.tests.vendorportal.VendorPortalTest -->
+    </test> <!-- user-john -->
+  </suite> <!-- vendor-portal -->
+</testng-results>

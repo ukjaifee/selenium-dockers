@@ -1,0 +1,57 @@
+  version: "3"
+  services:
+    hub:
+      image: seleniarm/hub:4.20
+      ports:
+      - 4444:4444
+    chrome:
+        image: seleniarm/node-chromium:4.20
+        shm_size: 2gb
+        depends_on:
+        - hub
+        environment:
+          - SE_EVENT_BUS_HOST=hub
+          - SE_EVENT_BUS_PUBLISH_PORT=4442
+          - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+          - SE_NODE_MAX_SESSIONS=4
+          - SE_VNC_NO_PASSWORD=1
+    firefox:
+      image: selenium/node-firefox:dev
+      shm_size: 2gb
+      depends_on:
+        - hub
+      environment:
+        - SE_EVENT_BUS_HOST=hub
+        - SE_EVENT_BUS_PUBLISH_PORT=4442
+        - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+        - SE_NODE_MAX_SESSIONS=4
+        - SE_VNC_NO_PASSWORD=1
+    flight-reservation:
+      image: jaifee/selenium-docker
+      depends_on:
+      - chrome
+      - firefox
+      environment:
+      - BROWSER=chrome
+      - HUB_HOST=hub
+      - THREAD_COUNT=2
+      - TEST_SUITE=flight-reservation.xml
+      volumes:
+        - ./output/flight-reservation:/home/selenium-docker/test-output
+    vendor-portal:
+      image: jaifee/selenium-docker
+      depends_on:
+        - firefox
+      environment:
+        - BROWSER=firefox
+        - HUB_HOST=hub
+        - THREAD_COUNT=2
+        - TEST_SUITE=vendor-portal.xml
+      volumes:
+        - ./output/vendor-portal:/home/selenium-docker/test-output
+        - ./test-data/mike.json:/home/selenium-docker/test-data/vendor-portal/mike.json
+
+
+
+
+

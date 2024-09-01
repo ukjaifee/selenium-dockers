@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-27T12:36:12 GMT" name="flight-reservation" finished-at="2024-08-27T12:37:17 GMT" duration-ms="65063">
+    <groups>
+    </groups>
+    <test started-at="2024-08-27T12:36:12 GMT" name="passengers-count-1" finished-at="2024-08-27T12:36:48 GMT" duration-ms="35545">
+      <class name="com.umesh.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@67080771]" started-at="2024-08-27T12:36:12 GMT" name="setDriver" finished-at="2024-08-27T12:36:19 GMT" duration-ms="7208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setParameters(java.lang.String)[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@67080771]" started-at="2024-08-27T12:36:19 GMT" name="setParameters" finished-at="2024-08-27T12:36:20 GMT" depends-on-methods="com.umesh.tests.AbstractTest.setDriver" duration-ms="415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test-data/flight-reservation/passenger-1.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParameters -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@67080771]" started-at="2024-08-27T12:36:20 GMT" name="userRegistrationTest" finished-at="2024-08-27T12:36:28 GMT" duration-ms="8052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@67080771]" started-at="2024-08-27T12:36:28 GMT" name="sleep" finished-at="2024-08-27T12:36:31 GMT" duration-ms="3001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@67080771]" started-at="2024-08-27T12:36:31 GMT" name="registrationConfirmationTest" finished-at="2024-08-27T12:36:32 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="1117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@67080771]" started-at="2024-08-27T12:36:32 GMT" name="sleep" finished-at="2024-08-27T12:36:35 GMT" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="flightsSearchTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@67080771]" started-at="2024-08-27T12:36:35 GMT" name="flightsSearchTest" finished-at="2024-08-27T12:36:37 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="1510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightsSearchTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@67080771]" started-at="2024-08-27T12:36:37 GMT" name="sleep" finished-at="2024-08-27T12:36:40 GMT" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="flightsSelectionTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@67080771]" started-at="2024-08-27T12:36:40 GMT" name="flightsSelectionTest" finished-at="2024-08-27T12:36:41 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.flightsSearchTest" duration-ms="1407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightsSelectionTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@67080771]" started-at="2024-08-27T12:36:41 GMT" name="sleep" finished-at="2024-08-27T12:36:44 GMT" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@67080771]" started-at="2024-08-27T12:36:44 GMT" name="flightReservationConfirmationTest" finished-at="2024-08-27T12:36:45 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.flightsSelectionTest" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservationConfirmationTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@67080771]" started-at="2024-08-27T12:36:45 GMT" name="sleep" finished-at="2024-08-27T12:36:48 GMT" duration-ms="3005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@67080771]" started-at="2024-08-27T12:36:48 GMT" name="quitDriver" finished-at="2024-08-27T12:36:48 GMT" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.umesh.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passengers-count-1 -->
+    <test started-at="2024-08-27T12:36:12 GMT" name="passengers-count-2" finished-at="2024-08-27T12:36:48 GMT" duration-ms="35857">
+      <class name="com.umesh.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@6babf3bf]" started-at="2024-08-27T12:36:12 GMT" name="setDriver" finished-at="2024-08-27T12:36:19 GMT" duration-ms="7212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setParameters(java.lang.String)[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@6babf3bf]" started-at="2024-08-27T12:36:19 GMT" name="setParameters" finished-at="2024-08-27T12:36:20 GMT" depends-on-methods="com.umesh.tests.AbstractTest.setDriver" duration-ms="413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test-data/flight-reservation/passenger-2.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParameters -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@6babf3bf]" started-at="2024-08-27T12:36:20 GMT" name="userRegistrationTest" finished-at="2024-08-27T12:36:28 GMT" duration-ms="8103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@6babf3bf]" started-at="2024-08-27T12:36:28 GMT" name="sleep" finished-at="2024-08-27T12:36:31 GMT" duration-ms="3001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@6babf3bf]" started-at="2024-08-27T12:36:31 GMT" name="registrationConfirmationTest" finished-at="2024-08-27T12:36:32 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="1124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@6babf3bf]" started-at="2024-08-27T12:36:32 GMT" name="sleep" finished-at="2024-08-27T12:36:35 GMT" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="flightsSearchTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@6babf3bf]" started-at="2024-08-27T12:36:35 GMT" name="flightsSearchTest" finished-at="2024-08-27T12:36:37 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="1682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightsSearchTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@6babf3bf]" started-at="2024-08-27T12:36:37 GMT" name="sleep" finished-at="2024-08-27T12:36:40 GMT" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="flightsSelectionTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@6babf3bf]" started-at="2024-08-27T12:36:40 GMT" name="flightsSelectionTest" finished-at="2024-08-27T12:36:41 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.flightsSearchTest" duration-ms="1387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightsSelectionTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@6babf3bf]" started-at="2024-08-27T12:36:41 GMT" name="sleep" finished-at="2024-08-27T12:36:44 GMT" duration-ms="3001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@6babf3bf]" started-at="2024-08-27T12:36:44 GMT" name="flightReservationConfirmationTest" finished-at="2024-08-27T12:36:45 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.flightsSelectionTest" duration-ms="579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservationConfirmationTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@6babf3bf]" started-at="2024-08-27T12:36:45 GMT" name="sleep" finished-at="2024-08-27T12:36:48 GMT" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@6babf3bf]" started-at="2024-08-27T12:36:48 GMT" name="quitDriver" finished-at="2024-08-27T12:36:48 GMT" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.umesh.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passengers-count-2 -->
+    <test started-at="2024-08-27T12:36:12 GMT" name="passengers-count-4" finished-at="2024-08-27T12:37:17 GMT" duration-ms="64766">
+      <class name="com.umesh.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setConfig()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:36:12 GMT" name="setConfig" finished-at="2024-08-27T12:36:12 GMT" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setConfig -->
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:36:12 GMT" name="setDriver" finished-at="2024-08-27T12:36:50 GMT" duration-ms="38098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setParameters(java.lang.String)[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:36:50 GMT" name="setParameters" finished-at="2024-08-27T12:36:50 GMT" depends-on-methods="com.umesh.tests.AbstractTest.setDriver" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test-data/flight-reservation/passenger-4.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParameters -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:36:50 GMT" name="userRegistrationTest" finished-at="2024-08-27T12:36:57 GMT" duration-ms="6973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:36:57 GMT" name="sleep" finished-at="2024-08-27T12:37:00 GMT" duration-ms="3005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:37:00 GMT" name="registrationConfirmationTest" finished-at="2024-08-27T12:37:01 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="1066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:37:01 GMT" name="sleep" finished-at="2024-08-27T12:37:04 GMT" duration-ms="3005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="flightsSearchTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:37:04 GMT" name="flightsSearchTest" finished-at="2024-08-27T12:37:06 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="1526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightsSearchTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:37:06 GMT" name="sleep" finished-at="2024-08-27T12:37:09 GMT" duration-ms="3004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="flightsSelectionTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:37:09 GMT" name="flightsSelectionTest" finished-at="2024-08-27T12:37:10 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.flightsSearchTest" duration-ms="1431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightsSelectionTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:37:10 GMT" name="sleep" finished-at="2024-08-27T12:37:13 GMT" duration-ms="3001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:37:13 GMT" name="flightReservationConfirmationTest" finished-at="2024-08-27T12:37:14 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.flightsSelectionTest" duration-ms="522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservationConfirmationTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:37:14 GMT" name="sleep" finished-at="2024-08-27T12:37:17 GMT" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@3fb1549b]" started-at="2024-08-27T12:37:17 GMT" name="quitDriver" finished-at="2024-08-27T12:37:17 GMT" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.umesh.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passengers-count-4 -->
+    <test started-at="2024-08-27T12:36:12 GMT" name="passengers-count-3" finished-at="2024-08-27T12:37:17 GMT" duration-ms="65060">
+      <class name="com.umesh.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setDriver()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@7ea9e1e2]" started-at="2024-08-27T12:36:12 GMT" name="setDriver" finished-at="2024-08-27T12:36:50 GMT" duration-ms="38241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setParameters(java.lang.String)[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@7ea9e1e2]" started-at="2024-08-27T12:36:50 GMT" name="setParameters" finished-at="2024-08-27T12:36:50 GMT" depends-on-methods="com.umesh.tests.AbstractTest.setDriver" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test-data/flight-reservation/passenger-3.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParameters -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@7ea9e1e2]" started-at="2024-08-27T12:36:50 GMT" name="userRegistrationTest" finished-at="2024-08-27T12:36:57 GMT" duration-ms="6888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@7ea9e1e2]" started-at="2024-08-27T12:36:57 GMT" name="sleep" finished-at="2024-08-27T12:37:00 GMT" duration-ms="3001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@7ea9e1e2]" started-at="2024-08-27T12:37:00 GMT" name="registrationConfirmationTest" finished-at="2024-08-27T12:37:01 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="1109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@7ea9e1e2]" started-at="2024-08-27T12:37:01 GMT" name="sleep" finished-at="2024-08-27T12:37:04 GMT" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="flightsSearchTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@7ea9e1e2]" started-at="2024-08-27T12:37:04 GMT" name="flightsSearchTest" finished-at="2024-08-27T12:37:06 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="1639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightsSearchTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@7ea9e1e2]" started-at="2024-08-27T12:37:06 GMT" name="sleep" finished-at="2024-08-27T12:37:09 GMT" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="flightsSelectionTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@7ea9e1e2]" started-at="2024-08-27T12:37:09 GMT" name="flightsSelectionTest" finished-at="2024-08-27T12:37:11 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.flightsSearchTest" duration-ms="1502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightsSelectionTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@7ea9e1e2]" started-at="2024-08-27T12:37:11 GMT" name="sleep" finished-at="2024-08-27T12:37:14 GMT" duration-ms="3003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@7ea9e1e2]" started-at="2024-08-27T12:37:14 GMT" name="flightReservationConfirmationTest" finished-at="2024-08-27T12:37:14 GMT" depends-on-methods="com.umesh.tests.flightreservation.FlightReservationTest.flightsSelectionTest" duration-ms="524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservationConfirmationTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@7ea9e1e2]" started-at="2024-08-27T12:37:14 GMT" name="sleep" finished-at="2024-08-27T12:37:17 GMT" duration-ms="3002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.umesh.tests.flightreservation.FlightReservationTest@7ea9e1e2]" started-at="2024-08-27T12:37:17 GMT" name="quitDriver" finished-at="2024-08-27T12:37:17 GMT" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.umesh.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passengers-count-3 -->
+  </suite> <!-- flight-reservation -->
+</testng-results>

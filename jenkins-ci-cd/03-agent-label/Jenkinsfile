@@ -1,0 +1,32 @@
+pipeline{
+
+   agent {
+     label "regression"
+   }
+
+   stages{
+   stage("test 01"){
+   steps{echo "executing mvn command"}
+
+   }
+
+   stage("test 02"){
+   steps{
+   echo "docker installtion"
+   }
+
+   }
+
+
+
+   }
+   post{
+    always{
+    echo "closing a file"
+    }
+
+   }
+
+
+
+}
