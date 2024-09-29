@@ -13,9 +13,7 @@ pipeline{
    }
 
    stage("Build Docker Image"){
-    environment{
 
-      }
    steps{
     sh 'docker build -t=jaifee/selautomation .'
     sh 'docker push jaifee/selautomation'
