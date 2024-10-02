@@ -1,35 +1,31 @@
 pipeline{
 
-   agent any
+    agent any
+
+    stages{
+
+         stage("Build an Code"){
+            steps{
+        sh "mvn clean package -DskipTests"
+        }
+        }
+
+        stage("Build an Image"){
+            steps{
+         sh "docker build -t=jaifee/selautomation ."
+        }
+        }
+
+        stage("Push an Image"){
+            steps{
+                sh "docker push jaifee/selautomation"
+            }
+
+        }
 
 
-   stages{
-   stage("Build the mvn project"){
-   steps{
-   sh 'mvn clean package -DskipTests'
-   }
-
-
-   }
-
-   stage("Build Docker Image"){
-
-   steps{
-    sh 'docker build -t=jaifee/selautomation .'
-    sh 'docker push jaifee/selautomation'
-   }
-
-   }
-
-
-
-   }
-   post{
-    always{
-    echo "closing a file"
     }
 
-   }
 
 
 
